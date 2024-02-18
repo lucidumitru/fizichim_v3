@@ -9,6 +9,8 @@ sidebar_position: 1
 
 ## dar pe Ana cui o lasati???!!!!
 
+## ABRACADABRA
+
 Let's discover **Docusaurus in less than 5 minutes**.
 
 ## Getting Started
