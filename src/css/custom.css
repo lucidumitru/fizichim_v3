@@ -5,6 +5,8 @@
  */
 
 /* You can override the default Infima variables here. */
+
+/*
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -16,8 +18,12 @@
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
+*/
+
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
+
+/*
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -27,4 +33,387 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+*/
+
+
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+
+:root {
+  --ifm-color-primary: #3578e5; /*#25c2a0;*/
+  --ifm-color-primary-dark: #1d68e1; /*rgb(33, 175, 144);*/
+  --ifm-color-primary-darker: #1b62d4; /*rgb(31, 165, 136);*/
+  --ifm-color-primary-darkest: #1751af; /*rgb(26, 136, 112);*/
+  --ifm-color-primary-light: #4e89e8; /*rgb(70, 203, 174);*/
+  --ifm-color-primary-lighter: #5a91ea; /*rgb(102, 212, 189);*/
+  --ifm-color-primary-lightest: #80aaef; /*rgb(146, 224, 208);*/
+  --ifm-code-font-size: 90%; /*95%;*/
+}
+
+html[data-theme='dark'] {
+  --ifm-background-color: #1e2125;
+  --ifm-background-surface-color: #121212;
+}
+
+
+
+
+
+
+/* increase font size in header and footer */
+
+@media screen and (max-width: 996px) {
+  :root {
+    --ifm-font-size-base: 18px;
+  }
+  article header h1 {
+    font-size: 1.5rem !important;
+  }
+  .hero .hero__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  :root {
+    --ifm-font-size-base: 17px;
+  }
+  article header h1 {
+    font-size: 2rem !important;
+  }
+}
+
+/* Adjust footer link colors */
+#__docusaurus > footer > div > div.text--center > div > a {
+  color: unset;
+}
+
+#__docusaurus > footer > div > div.text--center > div > a:hover {
+  color: var(--ifm-link-color);
+  text-decoration: underline;
+}
+
+
+
+/* adaugat de mine ca sa fac meniul activ din stanga portocaliu Nu A crescut Nota la Accesibilitate */
+
+/*
+.menu__link--active {
+
+color: orange;
+
+}
+
+*/
+
+
+
+
+
+
+
+/* adaugat de mine ca sa fac meniul activ din stanga rosu carmin */
+
+
+/*
+.menu__link--active {
+
+color: #C00000;
+
+}
+
+*/
+
+
+
+
+
+/* adaugat de mine ca sa fac meniul activ din stanga --ifm-color-primary adica albastru */
+
+
+
+.menu__link--active {
+
+color: var(--ifm-color-primary-dark);
+
+}
+
+
+
+
+
+
+
+
+/* adaugat de mine ca sa fac meniul de jos previous-next --ifm-color-primary-dark adica albastru inchis */
+
+
+.pagination-nav__label
+{
+color: var(--ifm-color-primary-dark);
+}
+
+
+
+
+/* adaugat de mine ca sa fac Butonul Edit this page din stanga --ifm-color-primary-dark adica albastru inchis*/
+
+
+
+.theme-edit-this-page
+{
+color: var(--ifm-color-primary-dark);
+
+}
+
+
+
+
+/* <a href="#ii11-proprietăți-fizice" class="table-of-contents__link toc-highlight table-of-contents__link--active">II.1.1. Proprietăți fizice.</a> */
+
+
+
+
+
+/* adaugat de mine ca sa fac TOC + meniu dreapta --ifm-color-primary-dark adica albastru inchis */
+
+
+
+.table-of-contents__link--active
+{
+font-size: 0,75rem !important;
+color: var(--ifm-color-primary-dark);
+
+}
+
+
+
+
+
+
+
+
+
+
+/* adaugat de mine ca sa fac Butonul Edit this page din stanga jos rosu carmin */
+
+
+/*
+.theme-edit-this-page
+{
+color: #C00000;
+}
+
+*/
+
+
+
+
+/* adaugat de mine ca sa fac TOC + meniu dreapta rosu carmin */
+
+
+/*
+.toc-highlight {
+
+font-size: 0,75rem !important;
+color: #C00000;
+
+}
+
+*/
+
+
+
+
+
+
+
+/* how to set a background image */
+
+/*
+:root {
+  --dev-dash-bg: url("../../static/img/LogoFizichim_1200x630.jpg") no-repeat;
+  --dev-dash-bg: url("../../static/img/LogoFizichim_1200x630.jpg") no-repeat;
+}
+[data-theme="dark"] {
+  --dev-dash-bg: url("../../static/img/LogoFizichim_1200x630.jpg") no-repeat;
+}
+.dev-dash {
+  height:720px;
+  background: var(--dev-dash-bg);
+}
+*/
+
+
+
+
+
+/* img */
+
+
+
+.img-responsive {
+  display: block;
+  width: 75%;
+  height: auto;
+  margin: 30px auto;
+  cursor: zoom-in;
+}
+
+
+.img-responsive2 {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+  cursor: zoom-in;
+}
+
+.img-responsive3 {
+  display: inline;
+  float: right;
+  width: 65%;
+  height: auto;
+  margin: 10px auto;
+  cursor: zoom-in;
+}
+
+
+.img-responsive65r {
+  display: inline;
+  float: right;
+  width: 65%;
+  height: auto;
+  margin: 10px auto;
+  cursor: zoom-in;
+}
+
+
+
+.img-responsive65l {
+  display: inline;
+  float: left;
+  width: 65%;
+  height: auto;
+  margin: 10px auto;
+  cursor: zoom-in;
+}
+
+
+/* Pentru poze aliniate la stanga     */
+.img-responsive4 {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  cursor: zoom-in;
+}
+
+
+.img-responsive5 {
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  margin: 0px auto;
+  cursor: zoom-in;
+}
+
+
+
+.img-responsive6 {
+  display: inline;
+  float: right;
+  width: 75%;
+  height: auto;
+  margin: 0px auto;
+  cursor: zoom-in;
+}
+
+
+
+
+/* video */
+.video-responsive {
+  break-inside: avoid;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.video-frame {
+  position: relative;
+  padding-bottom: 56.25%;
+  width: 100%;
+}
+
+.video-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.heatMap {
+  width: 100%;
+/*  width: 958px; */
+/*  width: fit-content; */
+  text-align: left;
+}
+
+.heatMap th {
+/*  background: #d0cfcf;*/
+/*  background: #3578e5;*/
+/*  background: #4e89e8;*/
+/*  background: #5a91ea;*/
+  background: #1b62d4;
+  color: #FFFFFF;
+/* background: #04AA6D;*/
+
+  word-wrap: break-word;
+  text-align: left;
+}
+.heatMap tr:nth-child(1) { background: #ffffff; }
+/*.heatMap tr:nth-child(1) { background: orange; }*/
+/*.heatMap tr:nth-child(2) { background: #9abcf2; }*/
+/*.heatMap tr:nth-child(2) { background: orange; }*/
+/*.heatMap tr:nth-child(3) { background: green; }*/
+/*.heatMap tr:nth-child(3) { background: orange; }*/
+/*.heatMap tr:nth-child(4) { background: orange; }*/
+
+
+
+/*table, th, td {
+  border: 1px solid black;
+} */
+
+
+
+
+
+.heatMap2 {
+  width: 100%;
+/*  width: 958px; */
+/*  width: fit-content; */
+  text-align: left;
+}
+
+.heatMap2 th {
+/*  background: #d0cfcf;*/
+/*  background: #3578e5;*/
+/*  background: #4e89e8;*/
+/*  background: #5a91ea;*/
+  background: #04AA6D;
+
+  word-wrap: break-word;
+  text-align: left;
 }

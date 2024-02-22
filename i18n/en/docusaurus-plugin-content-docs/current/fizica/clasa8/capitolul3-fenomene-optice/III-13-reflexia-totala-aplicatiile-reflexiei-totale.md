@@ -1,0 +1,288 @@
+---
+sidebar_position: 13
+custom_edit_url: null
+---
+
+# III.13. Reflexia totală. Aplicațiile reflexiei totale.
+
+
+
+
+import Img from '@site/src/components/Img'
+import Video from '@site/src/components/Video'
+
+
+
+
+
+
+<div class="alert alert--success" role="alert">
+
+&#128064 **Experimentul 11: Reflexia totală a luminii.**   
+&#128293 **Atenție!** Nu îndrepta lumina laserului spre ochi!
+
+
+
+<Video src="https://www.youtube.com/embed/wIivGY0s1KQ" lazy={false} />
+
+
+**Materiale necesare:**    
+Semicilindru din plexiglas (sticlă), disc Hartl, laser.
+
+
+<br></br>
+
+
+
+
+**Modul de lucru:**
+- Așază piesa semicilindrică pe discul Hartl astfel încât centrul ei să fie în centrul discului și raza incidentă să treacă din plexiglas în aer.
+- Urmărește mersul razei incidente și a celei de reflexie și refracție, pentru diferite unghiuri de incidență.
+  > Când indicele de refracție a primului mediu este mai mare decât a celui de-al doilea mediu (plexiglas-aer) și unghiul de incidență este mai mare decât unghiul limită, lumina se reflectă total.
+
+
+
+
+
+</div>
+
+
+
+
+
+<br></br>
+
+
+<div class="alert alert--primary" role="alert">
+
+
+**Reflexia totală** este fenomenul în care are loc numai fenomenul de reflexie, fără formarea razei refractate (unghiul de refracție este de 90°).
+
+</div>
+
+
+<br></br>
+
+<div class="alert alert--primary" role="alert">
+
+
+Pentru a avea loc fenomenul de reflexie totală trebuie îndeplinite două condiții:
+
+1) Indicele de refracție al primului mediu să fie mai mare decât al celui de-al doilea mediu, adică n<sub>1</sub> > n<sub>2</sub> .
+
+2) Unghiul de incidență să fie mai mare decât unghiul limită ( notat cu l ), unghi specific fiecărei perechi de medii care îndeplinește condiția n<sub>1</sub> > n<sub>2</sub>
+
+
+
+**Desen reflexie totală:**
+
+
+
+<Img className="img-responsive4" src="fizica/clasa8/capitolul3/III-13-total-reflection-applications-of-total-reflection-picture1-graphical-representation-of-total-reflection.png" width="1000" height="386" lazy={false} />
+
+<br></br>
+<br></br>
+
+
+
+
+<Img className="img-responsive4" src="fizica/clasa8/capitolul3/III-13-total-reflection-applications-of-total-reflection-picture2-explanations-to-the-graphical-representation-of-total-reflection.png" width="1000" height="352" lazy={false} />
+
+<br></br>
+<br></br>
+
+
+<Video src="https://www.youtube.com/embed/rUjnRJFdoRw" />
+
+
+
+
+</div>
+
+
+
+
+
+
+<br></br>
+
+
+<div class="alert alert--success" role="alert">
+
+&#128064 **Experiment: O oglindă inedită cu reflexie totală**
+
+
+<Video src="https://www.youtube.com/embed/XkFrN_bFJu8" />
+
+<br></br>
+<br></br>
+
+
+&#128064 **Experiment: Laserul captiv în jetul de apă.**   
+&#128293 **Atenție!** Nu îndrepta lumina laserului spre ochi!
+
+
+<Video src="https://www.youtube.com/embed/BemYDN5jV78" />
+
+<br></br>
+<br></br>
+
+
+
+&#128064 **Experiment: Moneda care dispare.**
+
+<Video src="https://www.youtube.com/embed/bCYjWxxikFw" />
+
+
+<br></br>
+<br></br>
+
+
+
+
+&#128064 **Experiment: Reflexia totală în apă.**   
+&#128293 **Atenție!** Nu îndrepta lumina laserului spre ochi!
+
+
+<Video src="https://www.youtube.com/embed/_kxRrgK6HEU" />
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<br></br>
+
+
+
+
+<div class="alert alert--primary" role="alert">
+
+Unghiul limită al unei perechi de medii nu trebuie învățat. El se calculează aplicând a doua lege a refracției și punând condiția reflexiei totale
+
+
+
+<Video src="https://www.youtube.com/embed/G2QxQ47LUPc" />
+
+<br></br>
+
+
+
+
+
+<Img className="img-responsive4" src="fizica/clasa8/capitolul3/III-13-total-reflection-applications-of-total-reflection-picture3-limit-angle-of-a-pair-of-mediums.png" width="1000" height="122" />
+
+
+<br></br>
+<br></br>
+
+Vei folosi calculatorul pentru a calcula sinusurile și arcsinusurile.
+
+
+**Exemple:**
+
+1)	Pentru perechea de medii plexiglas – aer , avem n<sub>1</sub> = 1,5 – n<sub>2</sub> = 1
+
+<Img className="img-responsive4" src="fizica/clasa8/capitolul3/III-13-total-reflection-applications-of-total-reflection-picture4-the-limit-angle-of-the-pair-of-mediums-plexiglass-aer.png" width="1000" height="328" />
+
+
+<br></br>
+<br></br>
+
+2)	Pentru perechea de medii apă – aer, avem n<sub>1</sub> = 1,33 – n<sub>2</sub> = 1
+
+<Img className="img-responsive4" src="fizica/clasa8/capitolul3/III-13-total-reflection-applications-of-total-reflection-picture5-the-limit-angle-of-the-pair-of-mediums-water-air.png" width="1000" height="325" />
+
+
+
+
+
+</div>
+
+
+
+<br></br>
+
+
+
+
+<div class="alert alert--warning" role="alert">
+
+**Aplicații**
+
+Reflexia totală are două mari aplicații: reflexia totală în prisme și reflexia totală în fibre optice.
+
+<br></br>
+
+
+
+&#128064 **Experiment: Aplicațiile reflexiei totale.**   
+&#128293 **Atenție!** Nu îndrepta lumina laserului spre ochi!
+
+
+
+<Video src="https://www.youtube.com/embed/nT_xMtzOTv0" />
+
+
+
+
+<br></br>
+<br></br>
+
+
+
+
+**I. Reflexia totală în prisme de sticlă** este folosită pentru a devia sau a întoarce un fascicul de lumină. Pe acest principiu funcționează catadioptrii roșii (ochi de pisică). Catadioptrii sunt plasați în spatele vehiculelor (automobile, motociclete, biciclete) sau pe panourile de semnalizare și întorc lumina farurilor pe direcția pe care a venit.
+
+<Img className="img-responsive4" src="fizica/clasa8/capitolul3/III-13-total-reflection-applications-of-total-reflection-picture6-total-reflection-in-glass-prisms-scheme-of-a-deflected-light-beam.png" width="1000" height="388" />
+
+<br></br>
+<br></br>
+
+
+<Img className="img-responsive4" src="fizica/clasa8/capitolul3/III-13-total-reflection-applications-of-total-reflection-picture7-total-reflection-in-glass-prisms-scheme-of-a-turned-back-light-beam.png" width="1000" height="440" />
+
+<br></br>
+<br></br>
+
+
+<Img className="img-responsive4" src="fizica/clasa8/capitolul3/III-13-total-reflection-applications-of-total-reflection-picture8-total-reflection-in-glass-prisms-picture-with-a-reflector.png" width="1000" height="400" />
+
+<br></br>
+<br></br>
+
+
+
+**II. Reflexia totală în fibre optice sau jeturi de apă**
+
+**Fibrele optice** sunt tuburi subțiri de sticlă sau plastic prin care lumina suferă o succesiune de reflexii totale.
+
+Fibrele optice au două mari aplicații:
+
+
+**II.1. În comunicații pentru transportarea unor cantități mari de informații (programe TV, internet la computer, convorbiri telefonice etc. ).**
+
+<Img className="img-responsive4" src="fizica/clasa8/capitolul3/III-13-total-reflection-applications-of-total-reflection-picture9-applications-of-total-reflection-fiber-optics.png" width="1000" height="257" />
+
+
+<br></br>
+<br></br>
+
+
+**II.2.	În medicină la construcția endoscopului**. Endoscopul este format din mănunchiuri de fibre optice, care introdus în interiorul corpului, unul trimite lumina către organul studiat (stomac, plămân, intestin), celălalt aduce înapoi imaginea acestuia, care apare pe un monitor.
+
+<Img className="img-responsive4" src="fizica/clasa8/capitolul3/III-13-total-reflection-applications-of-total-reflection-picture10-applications-of-total-reflection-the-endoscope.png" width="1000" height="376" />
+
+
+
+
+</div>
+
+
+
