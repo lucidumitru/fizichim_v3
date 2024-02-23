@@ -1,3 +1,6 @@
+import React from 'react';
+import Translate, {translate} from '@docusaurus/Translate';
+
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -12,17 +15,29 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+       <h1 className="hero__title">
           {siteConfig.title}
-        </Heading>
+        </h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/fizica/clasa6/capitolul1-introducere-in-studiul-fizicii/I-1-ce-este-fizica">
+            Apasă aici ca să înveți fizica
           </Link>
         </div>
+
+        <br></br>
+
+       <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/chimie/clasa7/capitolul1-chimia-stiinta-a-naturii/I-1-ce-este-chimia">
+              Apasă aici ca să înveți chimia ️
+          </Link>
+        </div>
+
       </div>
     </header>
   );
@@ -33,7 +48,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Invatare usoara fizica si chimie">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

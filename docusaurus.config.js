@@ -9,21 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 
-  i18n: {
-    defaultLocale: 'ro',
-    locales: ['ro', 'en'],
-    localeConfigs: {
-      ro: {
-        label: 'Română',
-        direction: 'ltr',
-      },
-      en: {
-        label: 'English',
-        direction: 'ltr',
-      },
 
-    },
-  },
 
 
 
@@ -458,6 +444,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/fizichim_v3/',
+  favicon: 'img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -470,10 +457,28 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
+
   i18n: {
+    defaultLocale: 'ro',
+    locales: ['ro', 'en'],
+    localeConfigs: {
+      ro: {
+        label: 'Română',
+        direction: 'ltr',
+      },
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+
+    },
+  },
+
+
+/*  i18n: {
     defaultLocale: 'en',
     locales: ['en'],
-  },
+  }, */
 
   presets: [
     [
@@ -497,6 +502,14 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+
+        sitemap: {
+          /*          cacheTime: 600 * 1000, // 600 sec - cache purge period */
+          changefreq: 'weekly',
+          priority: 0.5,
+        },
+
+
       }),
     ],
   ],
@@ -504,13 +517,34 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+
+/*         announcementBar:
+         {
+          id: 'support_us',
+          content:
+            'Ai întrebări pentru noi? Trimite-ne un mesaj pe pagina de facebook <a target="https://www.facebook.com/fizichim" rel="noopener noreferrer" href="https://www.facebook.com/fizichim"><strong>Fizichim</strong></a>',
+          backgroundColor: '#fafbfc',
+          textColor: '#091E42',
+          textColor: '#C00000',
+          isCloseable: false,
+        },
+*/
+
+
+
+
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Invăţare uşoară cu fizichim',
+        title: 'Fizichim',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/logo.svg',
+/*          src: 'img/logo.svg', */
+            src: 'img/LogoFizichim_200x200.svg',
+            width: 32,
+            height: 32,
+
+
         },
         items: [
 
@@ -519,7 +553,7 @@ const config = {
             position: 'right',
           },
 
-          {
+/*          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
@@ -530,13 +564,21 @@ const config = {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
-          },
+          }, */
+
+            {to: '/docs/fizica/clasa6/capitolul1-introducere-in-studiul-fizicii/I-1-ce-este-fizica', label: 'Fizică', position: 'left'},
+
+            {to: '/docs/chimie/clasa7/capitolul1-chimia-stiinta-a-naturii/I-1-ce-este-chimia', label: 'Chimie', position: 'left'},
+
+            {to: '/docs/biologie/fizicainlumeavie/I-miscarea-si-parghiile/I-1-parghia-un-mecanism-simplu', label: 'Opțional', position: 'left'},
+
+
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
+/*          {
             title: 'Docs',
             items: [
               {
@@ -561,28 +603,62 @@ const config = {
                 href: 'https://twitter.com/docusaurus',
               },
             ],
-          },
+          }, */
+
+
           {
-            title: 'More',
+            title: 'Invăţare uşoară',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Fizică',
+                to: '/docs/fizica/clasa6/capitolul1-introducere-in-studiul-fizicii/I-1-ce-este-fizica',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Chimie',
+                href: '/docs/chimie/clasa7/capitolul1-chimia-stiinta-a-naturii/I-1-ce-este-chimia',
               },
             ],
           },
+
+          {
+              title: 'Comunitate',
+              items: [{
+                label: 'Facebook',
+                href: 'https://www.facebook.com/fizichim',
+              },
+                {
+                  label: 'Youtube',
+                  href: 'https://www.youtube.com/fizichim',
+                },
+              ],
+          },
+
+          {
+              title: 'Donații',
+              items: [{
+                label: 'Dă click aici pentru a dona prin Revolut',
+                to: 'https://revolut.me/iuliadumitru',
+//                            label: 'Blog',
+//                            to: 'blog',
+              },
+              ],
+          },
+
+
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Dumitru Elena-Daniela: Fizichim vers3. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Dumitru Elena-Daniela: Fizichim vers3. Donații poți face în contul: RO79 BREL 0005 5015 6588 0100`,
       },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
     }),
+
+
+
+
+
+
 };
 
 export default config;
