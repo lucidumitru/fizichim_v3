@@ -14,6 +14,8 @@ const config = {
 
 
   plugins: [
+
+/*
     '@aldridged/docusaurus-plugin-lunr',
 //     [require.resolve('@cmfcmf/docusaurus-search-local'),{
 //         // Options here
@@ -26,7 +28,7 @@ const config = {
         indexBaseUrl: true
       },
     ],
-
+*/
     ['@docusaurus/plugin-client-redirects',
       {
         redirects: [
