@@ -1,0 +1,1 @@
+(self.webpackChunkfizichim_v_3=self.webpackChunkfizichim_v_3||[]).push([[28577],{20549:(i,c,s)=>{"use strict";s.d(c,{A:()=>h});var e=s(58291);s(86121)(e),s(37060)(e),s(37060)(e),s(66106)(e);const h=e},45741:()=>{}}]);

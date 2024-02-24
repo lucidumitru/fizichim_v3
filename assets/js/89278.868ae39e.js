@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkfizichim_v_3=self.webpackChunkfizichim_v_3||[]).push([[89278],{89278:(i,c,e)=>{e.r(c)}}]);
