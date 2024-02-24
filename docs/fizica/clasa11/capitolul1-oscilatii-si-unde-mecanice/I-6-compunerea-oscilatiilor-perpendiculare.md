@@ -126,5 +126,3 @@ Această relație reprezintă ecuația unei elipse înscrise într-un dreptunghi
 
 
 </div>
-
-abc

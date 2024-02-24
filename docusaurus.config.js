@@ -21,14 +21,14 @@ const config = {
 //         // Options here
 //         language: "ro" // language of your documentation, see next section
 //     }]
-
+*/
     [require.resolve('docusaurus-lunr-search'),
       {
         languages: ['ro', 'ro'], // language codes,
         indexBaseUrl: true
       },
     ],
-*/
+
     ['@docusaurus/plugin-client-redirects',
       {
         redirects: [
