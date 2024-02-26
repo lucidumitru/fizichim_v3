@@ -1,11 +1,11 @@
-import React, {useState} from 'react';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import cn from 'classnames';
-/* import Lightbox from 'react-image-lightbox'; */
-/* import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app */
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import cn from "classnames";
+import React, { useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
 
-const Img = ({className, src, alt = '', lazy = true, ...attrs}) => {
-    const [isOpen, setOpen] = useState(false);
+const Img = ({ className, src, alt = "", lazy = true, ...attrs }) => {
+    const [ isOpen, setOpen ] = useState(false);
     const url = useBaseUrl(src);
 
     return (
@@ -15,21 +15,27 @@ const Img = ({className, src, alt = '', lazy = true, ...attrs}) => {
             >
                 <source srcSet={`${url}.webp`} type="image/webp"/>
                 <img
-                    className={cn(className, 'img-responsive', 'gallery')}
+                    className={cn(className, "img-responsive", "gallery")}
                     src={url}
                     alt={alt}
                     {...attrs}
                     loading={lazy ? "lazy" : undefined}
                 />
             </picture>
-            {isOpen && (
-                <Lightbox
-                    mainSrc={url}
-                    onCloseRequest={() => setOpen(false)}
-                />
-            )}
+            <Lightbox
+                open={isOpen}
+                close={() => setOpen(false)}
+                controller={{ closeOnBackdropClick: true }}
+                render={{
+                    buttonPrev: () => null,
+                    buttonNext: () => null,
+                }}
+                slides={[
+                    { src: url },
+                ]}
+            />
         </>
-    )
+    );
 };
 
 export default Img;
